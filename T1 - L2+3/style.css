@@ -1,0 +1,14 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    color: darkcyan;
+    margin: auto;
+}
