@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+}
+
+.signin{
+    background-image: linear-gradient(rgba(152, 146, 146, 0), black),url(https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/0c2adf03-1761-41ff-86c1-76eb78c2fea0/VN-en-20220502-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    
+
+}
+.signin-form{
+    padding: 60px 68px 40px;
+    background: black ;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 450px;
+    margin: 100px auto;
+    min-height: 660px;
+    border-radius: 10px;
+    position:relative;
+  
+
+}
+.signin-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;}
+
+.email-signin:focus ~ .email-placeholder{
+    transform: translateY(calc(-50% + -12px));
+    color: rgb(47, 44, 44);
+}
+
+input.email-signin {height: 65px;
+    padding: 15px 20px;
+    border-radius: 5px;}
+
+label.email-placeholder {color: gray ;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;}
+
+input.email-signin::placeholder {opacity: 0;}
+
+.email-signin:not(:placeholder-shown) ~ .email-placeholder{
+    transform: translateY(calc(-50% + -12px));
+    color: rgb(47, 44, 44) ;
+}
