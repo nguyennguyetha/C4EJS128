@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: black;
+    --secondarry-color: white; 
+
+}
+html{
+    transition: all 0.5s ease-in;
+}
+html.dark{
+    --primary-color: white;
+    --secondary-color: rgb(88, 83, 83); 
+}
+
+html.dark{
+    background-color: black;
+    color: var(--primary-color);
+    
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.toggle{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondarry-color);
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 40px;
+    margin-right: 10px;
+}
+.toggle:focus {
+    outline: none;
+}
+
+.clock-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clock{
+    background-color: rgb(176, 104, 104);
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+}
+.needle{
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height:65px;
+    width: 4px;
+    transform-origin: bottom center;
+    
+
+}
+
+.needle.hour{
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+}
+.needle.minute{
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    
+}
+.needle.second{
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: red;
+}
+.center-point{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    padding-left: 1px;
+
+}
+.time{
+    font-size: 65px;
+    margin: 45%;
+    padding-top: 50%;
+}
+.date{
+    color: grey;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
